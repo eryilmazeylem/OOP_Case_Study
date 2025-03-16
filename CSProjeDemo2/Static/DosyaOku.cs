@@ -34,7 +34,8 @@ namespace CSProjeDemo2.Static
             }
             catch (Exception ex)
             {
-                throw new Exception("Dosya okuma hatası: " + ex.Message);
+                Console.WriteLine("Dosya okuma hatası: " + ex.Message);
+                return new List<Personel>();
 
             }
         }

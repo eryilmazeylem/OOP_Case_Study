@@ -30,7 +30,7 @@ namespace CSProjeDemo2.Static
                 string dosyaAdi = $"{klasorAdi}/Maas_Bordro_{DateTime.Now:yyyy_MM}.json";
                 File.WriteAllText(dosyaAdi, JsonConvert.SerializeObject(bordro, Formatting.Indented));
 
-
+                Console.WriteLine($"Bordro kaydedildi: {dosyaAdi}");
             }
         }
     }

@@ -62,5 +62,14 @@ namespace CSProjeDemo1.Concrete
             }
         }
 
+        public void KutuphaneDurumunuGoster()
+        {
+            Console.WriteLine("Kütüphane Durumu:");
+            foreach (var kitap in Kitaplar)
+            {
+                Console.WriteLine($"Kitap: {kitap.Baslik}, Durum: {kitap.KitapDurumu}");
+            }
+        }
+
     }
 }
